@@ -30,10 +30,11 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#work">Work Samples</a></li>
+								<li><a href="#about">About</a></li>		
+								<li><a href="#intro">Intro</a></li>						
+								<li><a href="#work">Work Samples</a></li>								
 								<li><a href="#drplaylist">Dr. Playlist</a></li>
+								<li><a href="#familytree">Family Tree</a></li>
 								<li><a href="#resume">Resume</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -43,6 +44,24 @@
 
 				<!-- Main -->
 					<div id="main">
+						<!-- About -->
+						<article id="about">
+							<h2 class="major">About</h2>
+							<span class="image right"><img src="{{ url_for('static', filename='files/portfolio_profile.jpg') }}" alt="" /></span>
+							<p>Hi there! I'm A.J., and I was born and raised in Los Angeles, where I completed my undergraduate education at UCLA in June 2019.
+								Although I graduated with a B.S. in Chemical & Biomolecular Engineering, I discovered a passion for Data Science during an internship 
+								with NovellusDX in Summer 2018, and have since been pursuing related opportunities in that field. I currently live in the Washington, 
+								D.C., metropolitan area and would love to connect with other professionals in the region, so please feel free to <a href="#contact">contact</a> 
+								me at any time!<br><br><br><br></p>
+								 <p>Here are some of the technologies I've been working with recently:
+								<ul style="margin-left: 20px; margin-top: -30px">
+									<li><b>Programming Languages:</b> Python, SQL, Javascript, HTML/CSS, MATLAB, C++</li>
+									<li><b>Libraries and Frameworks:</b> NumPy, Pandas, PyTest, Matplotlib, Seaborn, Scikit-learn, SpaCy, ScraPy, NLTK, Bokeh, Flask, Transformers, Graphviz, Haystack, SQLFluff, SQLGlot</li>
+									<li><b>Software Tools:</b> QGIS, Linux, Jenkins, Vim, Elasticsearch, Kibana, NiFi, Git, Snowflake</li>
+								</ul>
+							</p>
+						</article>
+					
 
 						<!-- Intro -->
 							<article id="intro">
@@ -58,17 +77,17 @@
  
                                     <br><br>Although most of my experience as a data scientist has coincidentally been focused on the financial side, I find that all realms of data science catch my interest. Natural Language Processing, Machine Learning, and Robotic Process Automation are some of my favorite areas to pursue in developing personal projects, so if you know of any new innovations, I would love to hear about them!
  
-                                    <br><br>Check out my <a href="#work">work</a>, which includes some of my favorite assignments completed within the Thinkful program,
-                                    as well as a few programs that I've written for various professional and personal projects.</p>
+                                    <br><br>Check out my <a href="#work">work samples</a>, which include some of my favorite assignments completed within the Thinkful program,
+                                    or take a look at the other tabs on this site for other personal projects I have since developed in my spare time.</p>
 
 							</article>
+
 
 						<!-- Work Samples -->
 							<article id="work">
 								<h2 class="major">Work Samples</h2>
 								<!--<span class="image main"><img src="images/pic02.jpg" alt="" /></span>-->
 								<ul>
-								
 								<li>Determination of the most significant features of a dataset with respect to life expectancy, accomplished by the removal of outliers (Winsorization), normalization (BoxCox transformation), and correlation analyses:
 									<br><a href="https://github.com/ajgoldsman/My-Portfolio/blob/master/static/work/Exploratory%20Data%20Analysis%20-%20Factors%20that%20affect%20life%20expectancy.ipynb') }}" target="_blank">
 									Exploratory Data Analysis: Factors that Affect Life Expectancy</a><br><br></li>
@@ -101,48 +120,14 @@
 								
 							</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image right"><img src="static/files/grad_pic.jpg" alt="" /></span>
-								<p>Hi there! I'm A.J., and I was born and raised in Los Angeles, where I completed my undergraduate education at UCLA in June 2019.
-									Although I graduated with a B.S. in Chemical & Biomolecular Engineering, I discovered a passion for Data Science during an internship 
-									with NovellusDX in Summer 2018, and have since been pursuing related opportunities in that field. I currently live in the Washington, 
-									D.C., metropolitan area and would love to connect with other professionals in the region, so please feel free to <a href="#contact">contact</a> 
-									me at any time!<br><br><br><br></p>
-								 	<p>Here are some of the technologies I've been working with recently:
-									<ul style="margin-left: 20px; margin-top: -30px">
-										<li><b>Programming Languages:</b> Python, SQL, Javascript, HTML/CSS, MATLAB, C++</li>
-										<li><b>Libraries and Frameworks:</b> NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, SpaCy, ScraPy, NLTK, Bokeh, Flask, Transformers, Haystack </li>
-										<li><b>Software Tools:</b> QGIS, Linux/ Red Hat, Jenkins, Vim, Elasticsearch, Kibana, NiFi, Git</li>
-									</ul>
-								</p>
-							</article>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								
-								<ul class="icons">
-									<li><a href="mailto:ajgoldsman@gmail.com" class="icon fa-envelope" target="_blank"><span class="label">ajgoldsman@gmail.com</span></a></li>
-									<li><a href="https://www.linkedin.com/in/aj-goldsman" class="icon fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://www.github.com/ajgoldsman" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-							
-								</ul>
-							</article>
-
-				
-						<!-- Resume -->
-							<article id="resume">
-								<h2 class="major">Resume</h2>
-								<span><embed src="static/files/Goldsman Resume DS - 202301.pdf#scrollbar=0" type="application/pdf" width="100%" height="800px" zoom="100%"/></span>
-								<p></p>
-							</article>
-
-						
 						<!-- Dr. Playlist -->
-						<article id="drplaylist">
+						<article id="drplaylist">							
 							<h2 class="major">Dr. Playlist</h2>
+							<b>In May of 2019, two UCLA students teamed up with the goal of utilizing data science and machine learning to improve music classification beyond what current algorithms achieve, 
+							with a focus on the tracks' genres/styles, via analysis of instrument type, chord progressions, meter, and several other features. Although the end goal of Dr. Playlist is to be 
+							able to classify any given song based on those features, we had to first explore the limitations of current models in order to determine the best ways to proceed with this project.</b>
+							<br><br>
 							Analysis and visualization of a subset of the Million Songs Dataset, which was originally compiled by researchers at Columbia University:
 							<br><a href="https://github.com/ajgoldsman/My-Portfolio/blob/master/static/work/Thinkful%20Capstone%201%20-%20Million%20Songs%20Subset.ipynb" target="_blank">
 							Million Songs Dataset <b><i>(Thinkful Capstone #1)</i></b></a><br><br>
@@ -158,12 +143,52 @@
 							Browser-based, Render-hosted <a href="https://drplaylist-disney.onrender.com/" target="_blank">Flask app</a> that provides Disney song recommendations based on a user-inputted song. Dataset features obtained by querying SpotiPy and LyricGenius APIs:
 							<br><a href="https://github.com/ajgoldsman/My-Portfolio/blob/master/static/work/Dr.%20Playlist%20-%20Disney%20Edition.ipynb" target="_blank">
 							<b><i>Dr. Playlist</i></b> - Disney Edition</a><br><br>
+							
 							<span><embed src="https://drplaylist-disney.onrender.com/" type="text/html" width="100%" height="1300px"/></span>
 							<p></p>
+						</article>
 
-							<span><embed src="https://drplaylist-disney.onrender.com/" type="text/html" width="100%" height="800px" zoom="100%"/></span>
+						
+						<!-- Family Tree -->
+						<article id="familytree">							
+							<h2 class="major">Family Tree</h2>
+							<b>In 2022, I was tasked with keeping an electronic record of my family's geneaology, to serve as a replacement for the paper copy being curated manually by my great-uncle.<br>
+							Instead of simply using text boxes and arrows, I opted for an automated Pythonic solution that has longevity, one that will allow us to continue to add new data for generations
+							to come. This solution also optimizes the layout of the branches, illustrating the relationships by generation in a compact but easily readable way.</b>
+							<br>
+							<br>
+							For privacy reasons, I have recreated the functionality here using the British monarchy's family tree as a sample dataset.
+							<br>
+							Browser-based, Render-hosted <a href="https://british-family-tree.onrender.com/" target="_blank">Flask app</a> that plots linkages in a Family Tree from data stored in a Google sheet. Allows users to download as JPG/PDF and make updates in real-time.
+							<br>
+							<br>
+							<span><embed src="https://british-family-tree.onrender.com/" type="text/html" width="100%" height="800px" zoom="50%"/></span>
 							<p></p>
 						</article>
+
+
+						
+
+						<!-- Resume -->
+						<article id="resume">
+							<h2 class="major">Resume</h2>
+							<span><embed src="static/files/Goldsman Resume DS - 202301.pdf#scrollbar=0" type="application/pdf" width="100%" height="800px" zoom="100%"/></span>
+							<p></p>
+						</article>
+
+						
+						<!-- Contact -->
+						<article id="contact">
+							<h2 class="major">Contact</h2>
+							
+							<ul class="icons">
+								<li><a href="mailto:ajgoldsman@gmail.com" class="icon fa-envelope" target="_blank"><span class="label">ajgoldsman@gmail.com</span></a></li>
+								<li><a href="https://www.linkedin.com/in/aj-goldsman" class="icon fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://www.github.com/ajgoldsman" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						
+							</ul>
+						</article>
+
 
 				<!-- Elements -->
 							<article id="elements">
