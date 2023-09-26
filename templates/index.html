@@ -35,6 +35,7 @@
 								<li><a href="#work">Work Samples</a></li>								
 								<li><a href="#drplaylist">Dr. Playlist</a></li>
 								<li><a href="#familytree">Family Tree</a></li>
+								<li><a href="#ner">NER Annotator</a></li>
 								<li><a href="#resume">Resume</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -144,7 +145,7 @@
 							<br><a href="https://github.com/ajgoldsman/My-Portfolio/blob/master/static/work/Dr.%20Playlist%20-%20Supervised%20Machine%20Learning%20Initial%20Analysis.ipynb" target="_blank">
 							<b><i>Dr. Playlist</i></b> - Initial Analysis and Genre Classification via Supervised Machine Learning</a><br><br>
 
-							Browser-based, Render-hosted <a href="https://drplaylist-disney.onrender.com/" target="_blank">Flask app</a> that provides Disney song recommendations based on a user-inputted song. Dataset features obtained by querying SpotiPy and LyricGenius APIs:
+							Browser-based, Render-hosted <a href="https://drplaylist-disney.onrender.com/" target="_blank"  data-url="https://drplaylist-disney.onrender.com/" id="drplaylist_link">Flask app</a> that provides Disney song recommendations based on a user-inputted song. Dataset features obtained by querying SpotiPy and LyricGenius APIs:
 							<br><a href="https://github.com/ajgoldsman/My-Portfolio/blob/master/static/work/Dr.%20Playlist%20-%20Disney%20Edition.ipynb" target="_blank">
 							<b><i>Dr. Playlist</i></b> - Disney Edition</a>
 							<p></p>
@@ -162,10 +163,33 @@
 							For privacy reasons, I have recreated the functionality here using the British monarchy's family tree as a sample dataset.
 							<br>
 							<br>
-							<span><embed src="https://british-family-tree.onrender.com/" type="text/html" width="100%" height="800px" zoom="50%"/></span>
+							<span><embed src="https://british-family-tree.onrender.com/" type="text/html" width="100%" height="750px" zoom="50%"/></span>
 							<br>
 							<br>
-							Browser-based, Render-hosted <a href="https://british-family-tree.onrender.com/" target="_blank">Flask app</a> that plots linkages in a Family Tree from data stored in a Google sheet. Allows users to download as JPG/PDF and make updates in real-time.
+							Browser-based, Render-hosted <a href="https://british-family-tree.onrender.com/" target="_blank" data-url="https://british-family-tree.onrender.com/" id="familytree_link">Flask app</a> that plots linkages in a Family Tree from data stored in a Google sheet. Allows users to download as JPG/PDF and make updates in real-time.
+							<p></p>
+						</article>
+
+
+						
+						<!-- NER -->
+						<article id="ner">							
+							<h2 class="major">Annotation Tool - NER</h2>
+							<b>Over the course of my career, I have on many occassions needed to manually annotate training data for machine learning applications,
+							especially those related to Natural Language Processing. Unfortunately, although there are several annotation tools available online,
+							they all felt too limited for my purposes or too expensive. So instead, I developed my own annotation tool, demoed here using Recipes data,
+							for which I have trained a Spacy Named Entity Recognition (NER) classifier to attempt to pre-identify and annotate relevant entities. The user can then make their own
+							annotations by highlighting a word or phrase with their mouse.</b>
+							<br>
+							<br>
+							Annotations can be changed or removed by clicking on the colored box surrounding your selection and selecting the appropraite option
+							within this Browser-based, Render-hosted <a href="https://ner-annotator-portfolio.onrender.com/display" target="_blank" data-url="https://ner-annotator-portfolio.onrender.com/display" id="ner_link">Flask app</a>.
+							<br>
+							<br>
+							Final annotations, stored via the user's click of the "Record Annotations" button, are uploaded to this <a href="https://docs.google.com/spreadsheets/d/13I3ljgq12c5dPOd4QlOfdc3m8PnSX9B7NAluWegDbmE/edit?usp=sharing" target="_blank">Google sheet</a>.
+							<br>
+							<br>
+							<span><embed src="https://ner-annotator-portfolio.onrender.com/display" type="text/html" width="100%" height="800px" scale="50%"/></span>
 							<p></p>
 						</article>
 						
@@ -448,6 +472,33 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+<script>
+	$('#ner').on('click', function(e) {
+		var url1 = $('#ner_link').data('url');
+		window.location.href = url1;
+		var url2 = $('#familytree_link').data('url');
+    	window.location.href = url2;
+		var url3 = $('#drplaylist_link').data('url');
+    	window.location.href = url3;
+	});
+	$('#familytree').on('click', function(e) {
+		var url2 = $('#familytree_link').data('url');
+    	window.location.href = url2;
+		var url1 = $('#ner_link').data('url');
+		window.location.href = url1;
+		var url3 = $('#drplaylist_link').data('url');
+    	window.location.href = url3;
+	});
+	$('#drplaylist').on('click', function(e) {
+		var url3 = $('#drplaylist_link').data('url');
+    	window.location.href = url3;
+		var url1 = $('#ner_link').data('url');
+		window.location.href = url1;
+		var url2 = $('#familytree_link').data('url');
+    	window.location.href = url2;
+	});
+</script>
+
 			<script src="static/assets/js/jquery.min.js"></script>
 			<script src="static/assets/js/browser.min.js"></script>
 			<script src="static/assets/js/breakpoints.min.js"></script>
